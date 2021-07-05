@@ -1,0 +1,12 @@
+local/
+.DS_Store
+*.mat
+*.dat
+*.mp4
+*.txt
+*.o
+*.exe
+*.slurm
+bash/slurm
+bash/out
+bash/bin
