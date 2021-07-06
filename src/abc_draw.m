@@ -23,10 +23,10 @@ NFRAMES = 200;
 NT      = 1e6;                  % number of time steps
 dt      = 0.005;                % time step magnitude in units of fundamental timescale
 calA0   = 1.3;                 % preferred shape parameter
-v0      = 0.02;                 % velocity scale
+v0      = 0.05;                 % velocity scale
 vmin    = 1e-2*v0;              % basal velocity
 Dr      = 0.01;                  % diffusivity in time
-Ds      = 0.05;                  % diffusivity in driving contour of cell
+Ds      = 0.2;                  % diffusivity in driving contour of cell
 b       = 1.0;                  % damping
 
 % frames to skip for plotting
@@ -198,7 +198,7 @@ for tt = 1:NT
     dpsi = dpsi - 2.0*pi*round(dpsi/(2.0*pi));
     
     % get velocity scales for each 
-    v0tmp = v0*exp(-(dpsi.^2)./(2.0*Ds)) + vmin;
+    v0tmp = v0*exp(-(dpsi.^2)./(2.0*Ds*Ds)) + vmin;
     
     % add to forces
     rscales = sqrt(rx.^2 + ry.^2);
@@ -213,7 +213,8 @@ for tt = 1:NT
         f = figure(1);
         clf, hold on, box off;
         Vs = [x, y];
-        patch('Faces',Flist,'Vertices',Vs,'FaceColor',[0.2222 0.6111 0.4000],'EdgeColor','k');
+%         patch('Faces',Flist,'Vertices',Vs,'FaceColor',[0.2222 0.6111 0.4000],'EdgeColor','k');
+        patch('Faces',Flist,'Vertices',Vs,'FaceColor','b','EdgeColor','k');
         axis equal;
         axis([-0.25*L 1.25*L -0.25*L 1.25*L]);
         ax = gca;

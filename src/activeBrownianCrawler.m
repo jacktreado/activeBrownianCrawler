@@ -1,4 +1,4 @@
-function activeBrownianCrawler(NV,calA0,Kl,Kb,v0,Dr,NT,dt,NFRAMES,seed,savestr)
+function activeBrownianCrawler(NV,calA0,Kl,Kb,v0,Dr,Ds,NT,dt,NFRAMES,seed,savestr)
 %% FUNCTION to run ABC model, save trajectory info
 
 % seed random number generator
@@ -6,8 +6,6 @@ rng(seed);
 
 % auxiliary parameters
 vmin = 1e-2*v0;
-Ds = 0.1;
-b = 1.0;
 
 % initial coordinates of deformable polygon
 x = zeros(NV,1);
