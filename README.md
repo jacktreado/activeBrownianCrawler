@@ -63,3 +63,25 @@ Section in progress...
 
 
 ## Matfile Data
+
+Data in the MAT-file named in the `savestr` can be either loaded into the workspace using 
+```matlab
+load(savestr);
+```
+or loaded into a `struct` using
+```matlab
+outputStruct = load(savestr);
+```
+The saved data can be accessed as struct member variables using the `.` variable, e.g. `outputStruct.NV`. 
+
+All inputs to the function are saved with their same name. Other variables are:
+
+* `frameList`: time step of each frame. 
+	* Note: time (in simulation units) of each frame is `frameList(tt) * dt`. 
+* `cList`: center-of-mass position at each frame
+* `fList`: center-of-mass net force at each frame
+* `vList`: center-of-mass velocity at each frame
+* `UList`: shape energy at each frame
+* `calAList`: shape parameter at each frame
+* `abpCList`: position of active brownian particle with steps drawn from ABC ensemble
+* `abpVList`: velocity of active brownian particle with steps drawn from ABC ensemble
