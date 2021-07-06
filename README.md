@@ -72,9 +72,10 @@ or loaded into a `struct` using
 ```matlab
 outputStruct = load(savestr);
 ```
-The saved data can be accessed as struct member variables using the `.` variable, e.g. `outputStruct.NV`. 
 
-All inputs to the function are saved with their same name. Other variables are:
+The saved data can be accessed as struct member variables using the `.` operator, e.g. `outputStruct.NV`. 
+
+All inputs to the function are saved in the MAT-file with their same name. Other variables are:
 
 * `frameList`: time step of each frame. 
 	* Note: time (in simulation units) of each frame is `frameList(tt) * dt`. 
