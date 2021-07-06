@@ -43,9 +43,14 @@ The main function is defined as follows:
 
 To run locally on your machine, call the MATLAB function from the MATLAB command line with relevant inputs. The left example was run with 
 ```matlab
->>> activeBrownianCrawler(32, 1.3, 1.0, 0.0, 0.05, 0.01, 0.2, 1e6, 0.005, 200, 1, 'test.mat');
+>> activeBrownianCrawler(32, 1.3, 1.0, 0.0, 0.05, 0.01, 0.2, 1e6, 0.005, 200, 1, 'test.mat');
 ```
 and the right-hand example with
 ```matlab
->>> activeBrownianCrawler(32, 1.3, 1.0, 0.0, 0.05, 0.1, 0.1, 1e6, 0.005, 200, 1, 'test.mat');
+>> activeBrownianCrawler(32, 1.3, 1.0, 0.0, 0.05, 0.1, 0.1, 1e6, 0.005, 200, 1, 'test.mat');
 ```
+
+
+## Running on the cluster 
+
+Section in progress...
