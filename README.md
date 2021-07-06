@@ -75,7 +75,7 @@ or loaded into a `struct` using
 outputStruct = load(savestr);
 ```
 
-The saved data can be accessed as struct member variables using the `.` operator, e.g. `outputStruct.NV`. 
+The saved data can then be accessed as struct member variables using the `.` operator, e.g. `outputStruct.NV`. 
 
 All inputs to the function are saved in the MAT-file with their same name. Other variables are:
 
