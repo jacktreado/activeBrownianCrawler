@@ -56,7 +56,7 @@ and the right-hand example with
 >> activeBrownianCrawler(32, 1.3, 1.0, 0.0, 0.05, 0.1, 0.1, 1e6, 0.005, 200, 1, 'test.mat');
 ```
 
-To draw the simulation frame-by-frame, see the script `abc_draw.m`. The simulation code is replicated exactly, but the shape of the deformable particle is drawn in a figure window. An animated simulation can be `.gif` file if the `makeAMovie` variable on line `79` is set to `1`. 
+To draw the simulation frame-by-frame, see the script `abc_draw.m`. The simulation code is replicated exactly, but the shape of the deformable particle is drawn in a figure window. An animated simulation can be saved to a `.gif` file if the `makeAMovie` variable on line `79` is set to `1`. 
 
 
 ## Running on the cluster 
