@@ -42,7 +42,7 @@ The main function is defined as follows:
 
 ### Outputs
 
-All simulation data is saved in the file named in the `savestr` variable. See [this section](##Matfile) for a detailed list of outputs. 
+All simulation data is saved in the file named in the `savestr` variable. See [this section](## Matfile) for a detailed list of outputs. 
 
 
 ## Running Locally
@@ -62,4 +62,4 @@ and the right-hand example with
 Section in progress...
 
 
-##Matfile
+## Matfile
