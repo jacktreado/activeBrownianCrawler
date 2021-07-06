@@ -226,14 +226,14 @@ end
 %% Also compare to ABP 
 
 % print 
-fprintf(' ** Also generating equivalent ABP data ... \n');
+fprintf(' Also generating equivalent ABP data ... \n');
 
 % displacements
-fprintf(' ** Computing velocities from psi ...\n');
+fprintf(' \t ** Computing velocities from psi ...\n');
 abpVel      = v0.*[cos(psi),sin(psi)];
 
 % center of mass
-fprintf(' ** Computing c.o.m positions ...\n');
+fprintf(' \t ** Computing c.o.m positions ...\n');
 abpPos      = cumsum(dt.*abpVel);
 
 % saving frames for abp
