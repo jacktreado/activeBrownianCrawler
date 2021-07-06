@@ -39,6 +39,12 @@ The main function is defined as follows:
 * `savestr`: string variable, path to file with saved data from simulation. Data saved in `.mat` file format, [see MATLAB documentation on MAT-files](https://www.mathworks.com/help/matlab/ref/matlab.io.matfile.html).
 
 
+
+### Outputs
+
+All simulation data is saved in the file named in the `savestr` variable. See [this section](##Matfile) for a detailed list of outputs. 
+
+
 ## Running Locally
 
 To run locally on your machine, call the MATLAB function from the MATLAB command line with relevant inputs. The left example was run with 
@@ -54,3 +60,6 @@ and the right-hand example with
 ## Running on the cluster 
 
 Section in progress...
+
+
+## Matfile

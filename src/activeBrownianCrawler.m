@@ -242,7 +242,7 @@ abpVList    = abpVel(frameList,:);
 
 %% Save
 
-save(savestr,'NV','calA0','Kl','Kb','v0','Dr','NT','dt','NFRAMES','seed',...
+save(savestr,'NV','calA0','Kl','Kb','v0','Dr','Ds','NT','dt','NFRAMES','seed',...
     'frameList','cList','fList','vList','UList','calAList','abpCList','abpVList');
 
 end
